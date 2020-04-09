@@ -49,3 +49,17 @@ gem "graphql", "~> 1.9"
 
 gem 'graphiql-rails', group: :development
 gem "slack-notify"
+
+gem 'dotenv-rails'
+gem 'unicorn'
+gem 'mini_racer', platforms: :ruby
+
+
+group :development, :test do
+    gem 'capistrano', '3.6.0'
+    gem 'capistrano-bundler'
+    gem 'capistrano-rails'
+    gem 'capistrano-rbenv'
+    gem 'capistrano3-unicorn'
+    
+end
